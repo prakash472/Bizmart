@@ -1,0 +1,330 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{background:#E0F2F1;}
+.main_wrapper{
+	width:100%;
+	height:auto;
+	margin:auto;
+	
+}
+.header1_wrapper{
+	width:100%;
+	height:20px;
+	background:#E0F2F1;
+	color:darkkhaki;
+	margin:auto;
+	text-align:left;
+	font-style: italic;
+		
+}
+.header2_wrapper{
+	width:100%;
+	height:60px;
+	background:#80CBC4;
+	color:#00695C;
+	font-size: 40px;
+	font-style: italic;
+}
+#navbar{
+	width:100%;
+	height:50px;
+	background:#009688;
+	color:#E0F2F1;
+	margin:auto;
+}
+#menu{
+	padding:0px;
+	line-height:36px;
+	margin-top:5px;
+	float:left;
+}
+    #menu li{
+		list-style:none;
+		display:inline;
+	}
+	#menu a{
+		color:#FFF;
+		text-decoration:none;
+		font-size:20px;
+		margin:5px;
+		padding:10px;
+	}
+	#menu a:hover{
+		text-decoration:underline;
+		color:#30C;
+		font-size:15px;
+		font-weight:bolder;
+	}
+		#form{
+			padding:0px;
+	        line-height:36px;
+	        margin-top:5px;
+	        float:right;
+			padding-right:10px;
+		}
+.content_wrapper{
+	width:100%;
+	height:auto;
+	background:#E0F2F1;
+    margin:auto;   
+}
+#single_product{float:left; padding:10px; margin-left:30px;}
+#single_product img {border:1px solid #CCC;}
+#right_content{
+	width:100%;
+	background:#E0F2F1;
+	float:right;
+	margin-left:auto;
+}
+#left_sidebar{
+	width:16%;
+	background:#000;
+	float:left;
+	height:auto;;
+	}
+.footer{
+	
+	width:100%;
+	height:112px;
+	background:#1E1E1E;
+	color:#8C3B11;
+	text-align: center;
+
+}
+#headline{
+ background :#000
+ height:auto;
+ margin-left:51%;
+ margin-top:auto;
+position:auto;
+}
+#headline_content{
+	text-align:right;
+	padding-right:20px;
+	font-size:20px;
+	height:auto;
+	background:#e1f5fe;
+	width:auto;
+	padding-right:100px;
+	padding-left=600px;
+	position: relative;
+}
+#sidebar_title{
+	background:#F09;
+	color:#000;
+	padding:10px;
+	font-size:22px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#cats{
+	text-align:center;
+	padding:10px;
+	
+}
+
+
+
+#cats li{list-style:none; margin:8px;}
+#cats a{color:#FFF; font-size:20px; text-decoration:none;margin:8px;}
+#cats a:hover{color:#F93;text-decoration:underline;font-weight:bold}
+#products_box{
+padding-left:0px;
+}
+#products_title{
+padding-left:0px;
+font-size:13px
+}
+.button {
+    position: centre;
+    }
+#left_sidebar1{
+	width:200px;
+	background:#000;
+	float:left;
+	height:auto;
+	}
+#products_box1{
+padding-left:50px;
+float:left;
+}
+#products_title1{
+padding-left:50px;
+font-size:14px
+}
+	
+* {box-sizing:border-box}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height:150px;
+}
+
+/* Caption text */
+.text {
+  color:aliceblue;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.b{
+	background-color: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.session{
+	
+    display: block;
+    padding: 5px;
+    color: #fff;
+   	background-color:none;
+    text-decoration: none;
+	}
+
+
+.nav {
+    background-color:#009688;
+    height :50px;
+    color :none;
+	list-style:none;
+	font-size:13px;
+    /* Bring the nav above everything else--uncomment if needed.
+    position: relative;
+    z-index: 5;
+    */
+}
+.nav li {
+    float: left;
+    margin-right:5px;
+    position: relative;
+
+}
+.nav a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+   	background-color:none;
+    text-decoration: none;
+}
+.navbar ul li:hover{
+    background-color :#4DB6AC;
+    cursor :pointer
+}
+.nav a:hover {
+    color: #fff;
+    background-color: #6b0c36;
+    text-decoration: none;
+}
+
+/*--- DROPDOWN ---*/
+.nav ul {
+    background-color: #fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background: rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style: none;
+    position: absolute;
+    left: -9999px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
+}
+.nav ul li {
+    padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float: none;
+	list-style:none;
+	
+}
+.nav ul a {
+    white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.nav li:hover ul { /* Display the dropdown on hover */
+    left: 0; /* Bring back on-screen when needed */
+}
+.nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    background-color: #00897B;
+    text-decoration: underline;
+}
+.nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration: none;
+}
+.nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background-color: #4DB6AC;
+}
+#iefix {
+position:relative;
+z-index:1000;
+}
+	
